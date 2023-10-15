@@ -67,7 +67,7 @@
                     <!--  <li><a class="button2" href="{{route('layoutTest')}}">Документы[TODO]</a></li> route('Documents')-->
                    <!-- <li><a class="button2" href="{{route('layoutTest')}}">Справочники[TODO]</a></li> route('Objects'), в душе не йабу как называть-->
                    
-                    <li><a class="button2" href="{{route('adminpanel')}}"><p class="icon-button screwdriver-wrench"></p>Админ-панель</a></li>
+                   <!-- <li><a class="button2" href="{{route('adminpanel')}}"><p class="icon-button screwdriver-wrench"></p>Админ-панель</a></li>-->
                     <li><a class="button2" href="javascript:LogOut();"><p class="icon-button right-from-bracket"></p>Выйти</a></li> <!--route('AdminPanel')--> 
                 </ul>
             </div>

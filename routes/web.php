@@ -37,16 +37,17 @@ ESE/TEST/
 */
 
 /* ESE/SDK/TEST/diagrammer */
-Route::get('ESE/TEST/diagrammer',function () {
+/*Route::get('ESE/TEST/diagrammer',function () {
     return view('/test/diagrammer_test');
 })->name('diagrammerTest');
-
+*/
 
 //Тест контекста процесса
+/*
 Route::get('ESE/TEST/CONTEXT',function () {
     return view('/test/context_test')->with('currentFormId',1);
 })->name('contextTest');
-
+*/
 /* ESE/SDK/TEST/layout */
 Route::get('ESE/TEST/layout',function () {
     return view('/ese/layout');

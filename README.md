@@ -1,4 +1,5 @@
 # Ese-CRM
+<b>Discontinued!</b>
 ESE-CRM Leightweight OpenSource BPMN CRM
 Developed with:
 Backend - Laravel (php)

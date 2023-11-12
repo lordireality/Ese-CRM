@@ -48,7 +48,7 @@ class UserVariables{
     public $SomeText;
 
     public function __construct(){
-        $this->SomeText = new ESE_String("Текст","ttttttt",false);
+        $this->SomeText = new ESE_Text("Текст","ttttttt",false);
         
     }
 /*----------EndUserVariables----------*/
@@ -125,8 +125,15 @@ class ESE_String extends IVariable{
 }
 class ESE_Text extends IVariable{
     
-    public function Draw(){
+    if($this->readOnly == true){
+        $HtmlHelper = '<div><p>'.$this->VisibleName.'</p><p>'.$this->Value.'</p></div>';
+    } else if($this->readOnly == false){
         $HtmlHelper = '<p>'.$this->VisibleName.'</p><textarea>'.$this->Value.'</textarea>';
+    }
+    return $HtmlHelper;
+
+    public function HTMLHelper(){
+        
         return $HtmlHelper;
     }
 }

@@ -16,7 +16,12 @@ class DesignerController extends Controller
         return view('ese/designer/indexAllPages')->with("allPages",$allPages);
     }
     function AllUIWidgets(){
+        //AllWidgets
+        $allWidgets = DB::table('uiwidget')->select('id','path','visiblename')->get();
+        return view('ese/designer/indexAllWidgets')->with("allWidgets",$allWidgets);
 
+
+        //allWidgets
     }
     function AllObjects(){
         //тупа список
@@ -25,6 +30,8 @@ class DesignerController extends Controller
         //тупа список
     }
     function OrganizationItemPreview(){
+        $organizationItems = DB::table('organizationItem')->get();
+        return view('ese/designer/organizationItem')->with("organizationItems",$organizationItems);
         //короче идея такова, выводится SVG со штаткой, по клику - открывается Editor
     }
 }

@@ -81,7 +81,7 @@ Route::get('/UIPage/{pagepath}', [App\Http\Controllers\UIPageController::class, 
 Route::get('/DevStudio/EditUIPage/{pagepath}', [App\Http\Controllers\UIPageController::class, 'EditPage'])->name('DevStudioEditUIPage');
 
 /*Виджеты*/
-Route::get('/UIWidget/{widgetpath}', [App\Http\Controllers\UIWidgetController::class, 'WidgetView'])->name('UIWidgetPreviewView'); //ViewTickets
+Route::get('/UIWidget/{widgetpath}', [App\Http\Controllers\UIWidgetController::class, 'WidgetView'])->name('UIWidgetPreviewView'); 
 Route::get('/DevStudio/EditUIWidget/{widgetpath}', [App\Http\Controllers\UIWidgetController::class, 'EditWidget'])->name('DevStudioEditUIWidget');
 
 /*Отчеты*/
@@ -110,4 +110,8 @@ Route::get('DevStudio',function () {
 
 Route::get('/DevStudio/UIReports/', [App\Http\Controllers\DesignerController::class, 'AllUIReports'])->name('DevStudioReportsIndex');
 Route::get('/DevStudio/UIPages/', [App\Http\Controllers\DesignerController::class, 'AllUIPages'])->name('DevStudioPagesIndex');
+Route::get('/DevStudio/UIWidgets/', [App\Http\Controllers\DesignerController::class, 'AllUIWidgets'])->name('DevStudioWidgetIndex');
+Route::get('/DevStudio/OrganizationItem/', [App\Http\Controllers\DesignerController::class, 'OrganizationItemPreview'])->name('DevStudioOrganizationItemIndex');
+//OrganizationItemPreview
+
 

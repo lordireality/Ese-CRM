@@ -352,6 +352,12 @@ img
 {
 	text-align: left;
 }
+
+.iframeSilent{
+	width:100%;
+	height: 600px;
+}
+
 @media(max-width:960px)
 {
 	header
